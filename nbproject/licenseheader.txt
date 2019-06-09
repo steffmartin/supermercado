@@ -1,0 +1,12 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Trabalho de Programacao Orientada a Objetos 2
+${licensePrefix}Grupo:
+${licensePrefix}11511BSI267 - Heitor H. Nunes
+${licensePrefix}11411BSI207 - Matheus Eduardo da S. Ramos
+${licensePrefix}11511BSI257 - Pedro Henrique da Silva
+${licensePrefix}11511BSI215 - Steffan M.  Alves
+<#if licenseLast??>
+${licenseLast}
+</#if>

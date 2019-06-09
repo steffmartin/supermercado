@@ -1,0 +1,1567 @@
+/* -----START CSS RESET----- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    font-family: Verdana, Geneva, sans-serif;
+    background: radial-gradient(#5b81a4, #2d4052);
+    overflow:hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+/* -----END CSS RESET----- */
+
+
+/* -----START BUTTONS----- */
+
+button {
+    min-width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.azulButton {
+    background: linear-gradient(#3f5a73, #2d4052);
+    font-weight: bold;
+    color: #FFF;
+}
+
+.azulButton:hover {
+    background: linear-gradient(#2d4052, #3f5a73);
+    color: #ecf0f1;
+    box-shadow: 0 0;
+}
+
+.cinzaButton {
+    background: linear-gradient(#9fa7ad, #75828a);
+    font-weight: bold;
+    color: #FFF;
+}
+
+.cinzaButton:hover {
+    background: linear-gradient(#75828a, #9fa7ad);
+    color: #ecf0f1;
+    box-shadow: 0 0;
+}
+
+.vermelhoButton {
+    background: linear-gradient(#eb6e60, #e64533);
+    font-weight: bold;
+    color: #FFF;
+}
+
+.vermelhoButton:hover {
+    background: linear-gradient(#e64533, #eb6e60);
+    color: #ecf0f1;
+    box-shadow: 0 0;
+}
+
+.amareloButton {
+    background: linear-gradient(#ffeb66, #ffcc00);
+    font-weight: bold;
+    color: #FFF;
+}
+
+.amareloButton:hover {
+    background: linear-gradient(#ffcc00, #ffeb66);
+    color: #ecf0f1;
+    box-shadow: 0 0;
+}
+
+.verdeButton {
+    background: linear-gradient(#59d98e, #26a65b);
+    font-weight: bold;
+    color: #FFF;
+}
+
+.verdeButton:hover {
+    background: linear-gradient(#26a65b, #59d98e);
+    color: #ecf0f1;
+    box-shadow: 0 0;
+}
+
+.leftButton {
+    position: absolute;
+    left: 0;
+}
+
+.rightButton {
+    position: absolute;
+    right: 0;
+}
+
+.normalButton {
+    position: relative;
+}
+
+
+/* -----END BUTTONS----- */
+
+
+/* -----START DEFAULT----- */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 13px #222;
+    border-radius: 5px;
+}
+
+.header {
+    position: relative;
+    height: 60px;
+    background: linear-gradient(#2d4052, #3f5a73);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 15px;
+}
+
+.header h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #999;
+}
+
+.header img {
+    position: absolute;
+    height: 25px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.section {
+    position: relative;
+    background: #ecf0f1;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.section input,
+.section select {
+    position: relative;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 40px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #c5d1d3;
+}
+
+.section input:not(:first-child) {
+    margin-top: 15px;
+}
+
+.buttonsBot {
+    position: relative;
+    height: 40px;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #c5d1d3;
+}
+
+.buttonsTop {
+    position: relative;
+    height: 40px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c5d1d3;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="date"]:not(:valid){
+    color: #a8a8a8;
+    text-transform: uppercase;
+    font-family: Consolas, monospace;   
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 0.75s;
+    -moz-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.ocultar {
+    display: none;
+}
+
+.invisivel{
+    visibility: hidden;
+}
+
+
+/* -----END DEFAULT----- */
+
+
+/* -----START TABLE----- */
+
+.table {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.table::-webkit-scrollbar-thumb {
+    background: rgba(45, 64, 82, 1);
+}
+
+table {
+    border-collapse: collapse;
+    border-bottom: 1px solid #c5d1d3;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 0.7em;
+}
+
+thead th {
+    background: linear-gradient(#3f5a73, #2d4052);
+    padding: 0 5px;
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+    height: 30px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+tbody td {
+    border: 1px solid #c5d1d3;
+    border-top: none;
+    border-bottom: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+    background: linear-gradient(#dee6ed, #bdccdb);
+}
+
+tbody .selecionado {
+    background: linear-gradient(#59d98e, #26a65b) !important;
+}
+
+tbody .cancelada {
+    color: #f00;
+}
+
+.table input[type="radio"] {
+    display: none;
+}
+
+
+/* -----END TABLE----- */
+
+
+/* -----START login.html/trocarsenha.html----- */
+
+#login,
+#trocarSenha {
+    width: 400px;
+    color: #2d4052;
+}
+
+#login .section input,
+#trocarSenha .section input {
+    width: 100%;
+}
+
+#login .section .fa,
+#trocarSenha .section .fa {
+    position: absolute;
+    right: 30px;
+    margin-top: -28px;
+    color: #2d4052;
+}
+
+#trocarSenha .section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#trocarSenha .section input[type="checkbox"] {
+    width: auto;
+    height: inherit;
+}
+
+
+/* -----END login.html/trocarsenha.html----- */
+
+
+/* -----START produtos.html/usuarios.html/vendas.html----- */
+
+#produtos,
+#usuarios,
+#vendas {
+    width: 800px;
+}
+
+#produtos .section input[type="search"],
+#usuarios .section input[type="search"],
+#vendas .section input[type="search"] {
+    width: -webkit-calc(100% - 55px);
+    padding-right: 15px;
+}
+
+#produtos .section form button,
+#usuarios .section form button,
+#vendas .section form button {
+    margin-right: 10px;
+}
+
+#produtos .section .buttonsTop button,
+#usuarios .section .buttonsTop button,
+#vendas .section .buttonsTop button {
+    min-width: 0;
+    width: 40px;
+    margin: 0;
+}
+
+#produtos .section .fa,
+#usuarios .section .fa,
+#vendas .section .fa {
+    color: #FFF;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+#produtos .section .table .fa{
+    color: inherit;
+    font-size: inherit;
+    margin:0px;
+}
+
+#produtos .section .buttonsTop .fa,
+#usuarios .section .buttonsTop .fa,
+#vendas .section .buttonsTop .fa {
+    font-size: 1em;
+    margin: 0;
+    vertical-align: top;
+}
+
+
+/* -----END produtos.html/usuarios.html/vendas.html----- */
+
+
+/* -----START novavenda.html---- */
+
+#novaVenda .section {
+    width: 800px;
+    color: #2d4052;
+}
+
+#novaVenda .section .subContainer {
+    width: 465px;
+    float: left;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+#novaVenda .section .subContainer input[name="qtd"] {
+    width: 100px;
+    padding: 0 15px 0 15px;
+    margin-right: 15px;
+}
+
+#novaVenda .section .subContainer input[name="cod_barras"] {
+    width: 220px;
+    padding: 0 15px 0 40px;
+    margin: 0;
+}
+
+#novaVenda .section .subContainer span{
+    position: absolute;
+    left: 121px;
+    top: 30px;
+}
+
+#novaVenda .section .subContainer .fa.fa-barcode {
+    position: absolute;
+    left: 150px;
+    top: 28px;
+}
+
+#novaVenda .section .subContainer button[type="submit"]{
+    min-width: 40px;
+    margin-left: 15px;
+}
+
+#novaVenda .section .subContainer fieldset button .fa {
+    color: #FFF;
+    margin-right: 5px;
+}
+
+#novaVenda .section .subContainer fieldset button {
+    margin-right: 15px;
+}
+
+#novaVenda .section .subContainer fieldset {
+    border: 1px solid #c5d1d3;
+    border-radius: 5px;
+    padding: 15px;
+    color: #2d4052;
+    margin: 15px 0;
+}
+
+#novaVenda .section .subContainer legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#novaVenda .section select {
+    width: 312px;
+    padding-left: 35px;
+}
+
+#novaVenda .section select:not(:valid) {
+    color: #a8a8a8;
+}
+
+#novaVenda .section option {
+    color: #000;
+}
+
+#novaVenda .section option:first-child {
+    display: none;
+}
+
+#novaVenda .section .subContainer .opvenda {
+    border: 1px solid #c5d1d3;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#novaVenda .section .subContainer .opvenda div {
+    border-top: 1px solid #c5d1d3;
+    padding-top: 15px;
+}
+
+#novaVenda .section .subContainer .desconto input {
+    width: 47.5%;
+}
+
+#novaVenda .section .subContainer .desconto input:nth-child(2){
+    margin-right: 15px;
+}
+
+#novaVenda .section .subContainer .desconto p{
+    text-align: justify;
+}
+
+#novaVenda .section .subContainer .desconto input[name="desconto"] {
+    width: 86%;
+    padding: 0 15px 0 40px;
+    margin-right: -15px;
+}
+
+#novaVenda .section .subContainer .desconto .fa.fa-user {
+    position: absolute;
+    top: 246px;
+    left: 213px;
+    color: #2d4052;
+}
+
+#novaVenda .section .subContainer .desconto .fa.fa-lock {
+    position: absolute;
+    top: 246px;
+    left: 439px;
+    color: #2d4052;
+}
+
+#novaVenda .section .subContainer .desconto .fa.fa-usd {
+    position: relative;
+    left: -350px;
+    color: #2d4052;
+}
+
+#novaVenda .section .subContainer .cartaocredito input[name="numero"],
+#novaVenda .section .subContainer .cartaodebito input[name="numero"],
+#novaVenda .section .subContainer .ticket input[name="numero"] {
+    width: 87%;
+    padding: 15px;
+    margin-right: -5px;
+}
+
+#novaVenda .section .subContainer .dinheiro input[name="numero"] {
+    width: 86%;
+    padding: 0 15px 0 40px;
+}
+
+#novaVenda .section .subContainer .dinheiro .fa.fa-usd {
+ position: relative;  
+        left: -350px;
+    color: #2d4052;
+    margin: -5px;;
+}
+
+#novaVenda .section .subContainer .fa.fa-list-ul {
+    position: absolute;
+    top: 112px;
+    left: 165px;
+    color: #2d4052;
+}
+
+#novaVenda .section .subContainer ul {
+    text-align: left;
+    width: 100%;
+    color: #2d4052;
+    display: inline-block;
+}
+
+#novaVenda .section .subContainer ul li{
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#novaVenda .section .subContainer ul input {
+    height: auto;
+    margin-top: 0;
+}
+
+.cupom {
+    background: #ffffe6;
+    text-align: center;
+    font-family: Consolas, monospace;
+    border-top: 5px dotted #ecf0f1;
+    border-bottom: 5px dotted #ecf0f1;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 11.05px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    white-space:pre-wrap;
+}
+
+.cupom::first-line {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.cupom::-webkit-scrollbar-thumb {
+    background: rgba(255, 235, 180, 1);
+}
+
+#novaVenda .buttonsBot button:first-child{
+    margin-right: 15px;
+}
+
+#novaVenda .section .subContainer .informacoes{
+    position: absolute;
+    bottom: 88px;
+    height: 61px;
+    overflow: hidden;
+    width: inherit;
+    box-sizing: border-box;
+}
+
+#novaVenda .section .subContainer .informacoes .total,
+#novaVenda .section .subContainer .informacoes .qitens,
+#novaVenda .section .subContainer .informacoes .recebido,
+#novaVenda .section .subContainer .informacoes .troco {
+    height: 100%;
+    float: right;
+    border: 5px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+    font-size: 26px;
+    text-shadow: 1px 1px 2px #fff;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: default;
+    line-height: 35px;
+    padding: 0 10px;
+    
+}
+
+#novaVenda .section .subContainer .informacoes .total::first-line,
+#novaVenda .section .subContainer .informacoes .qitens:first-line,
+#novaVenda .section .subContainer .informacoes .recebido:first-line,
+#novaVenda .section .subContainer .informacoes .troco:first-line{
+    background: rgba(255, 255, 255, .5);
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#novaVenda .section .subContainer .qitens{
+    background: repeating-linear-gradient(45deg,rgba(255, 0, 0, .5),rgba(255, 0, 0, .1),rgba(255, 0, 0, .5) 5%);
+}
+#novaVenda .section .subContainer .total{
+    background: repeating-linear-gradient(45deg,rgba(0, 0, 255, .4),rgba(0, 0, 255, .1),rgba(0, 0, 255, .4) 5%);
+}
+#novaVenda .section .subContainer .recebido{
+    background: repeating-linear-gradient(45deg,rgba(0, 255, 0, .5),rgba(0, 255, 0, .1),rgba(0, 255, 0, .5) 5%);
+}
+#novaVenda .section .subContainer .troco{
+    background: repeating-linear-gradient(45deg,rgba(255, 255, 0, .5),rgba(255, 255, 0, .1),rgba(255, 255, 0, .5) 5%);
+}
+
+/* -----END novavenda.html-----*/
+
+
+/* -----START vervenda.html---- */
+
+#verVenda .section {
+    width: 800px;
+    color: #2d4052;
+}
+
+#verVenda .section .subContainer {
+    width: 465px;
+    float: left;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+#verVenda .section .subContainer fieldset {
+    border: 1px solid #c5d1d3;
+    border-radius: 5px;
+    padding: 15px;
+    color: #2d4052;
+    margin-bottom: 15px;   
+}
+
+#verVenda .section .subContainer legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#verVenda .section .subContainer ul {
+    text-align: left;
+    width: 100%;
+    color: #2d4052;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+#verVenda .section .subContainer ul li{
+    width: 100%;
+    display: inline-block;
+}
+
+#verVenda .section .subContainer ul li b{
+    font-weight: bold;
+}
+
+#verVenda .section .subContainer ul li::first-word{
+    font-weight: bold;
+}
+
+#verVenda .section .subContainer ul li:not(:first-child){
+    margin-top: 10px;
+}
+
+#verVenda .section .subContainer ul li span{
+    float: right;
+}
+
+#verVenda .section .subContainer .informacoes{
+    position: absolute;
+    bottom: 88px;
+    height: 61px;
+    overflow: hidden;
+    width: inherit;
+    box-sizing: border-box;
+}
+
+#verVenda .section .subContainer .informacoes .total,
+#verVenda .section .subContainer .informacoes .qitens,
+#verVenda .section .subContainer .informacoes .recebido,
+#verVenda .section .subContainer .informacoes .troco {
+    height: 100%;
+    float: right;
+    border: 5px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+    font-size: 26px;
+    text-shadow: 1px 1px 2px #fff;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: default;
+    line-height: 35px;
+    padding: 0 10px;
+    
+}
+
+#verVenda .section .subContainer .informacoes .total::first-line,
+#verVenda .section .subContainer .informacoes .qitens:first-line,
+#verVenda .section .subContainer .informacoes .recebido:first-line,
+#verVenda .section .subContainer .informacoes .troco:first-line{
+    background: rgba(255, 255, 255, .5);
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#verVenda .section .subContainer .qitens{
+    background: repeating-linear-gradient(45deg,rgba(255, 0, 0, .5),rgba(255, 0, 0, .1),rgba(255, 0, 0, .5) 5%);
+}
+#verVenda .section .subContainer .total{
+    background: repeating-linear-gradient(45deg,rgba(0, 0, 255, .4),rgba(0, 0, 255, .1),rgba(0, 0, 255, .4) 5%);
+}
+#verVenda .section .subContainer .recebido{
+    background: repeating-linear-gradient(45deg,rgba(0, 255, 0, .5),rgba(0, 255, 0, .1),rgba(0, 255, 0, .5) 5%);
+}
+#verVenda .section .subContainer .troco{
+    background: repeating-linear-gradient(45deg,rgba(255, 255, 0, .5),rgba(255, 255, 0, .1),rgba(255, 255, 0, .5) 5%);
+}
+
+/* -----END vervenda.html-----*/
+
+
+/* -----START erro.html----- */
+
+#erro {
+    width: 500px;
+    color: #2d4052;
+}
+
+#erro .header {
+    background: linear-gradient(#c0392b, #e74c3c);
+}
+
+#erro .section p {
+    text-align: justify;
+}
+
+#erro .mensagemerro {
+    background: #f1978e;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #8b0000;
+    overflow: auto;
+    max-height: 150px;
+}
+
+.mensagemerro::-webkit-scrollbar-thumb {
+    background: rgba(192, 57, 43, 1);
+}
+
+
+/* -----END erro.html----- */
+
+
+/* -----START sucesso.html----- */
+
+#sucesso {
+    width: 500px;
+    color: #2d4052;
+}
+
+#sucesso .header {
+    background: linear-gradient(#26a65b, #59d98e);
+}
+
+#sucesso .section p,
+#sucesso .section li {
+    text-align: justify;
+}
+
+
+/* -----END sucesso.html----- */
+
+
+/* -----START alerta.html----- */
+
+#alerta {
+    width: 500px;
+    color: #2d4052;
+}
+
+#alerta .header {
+    background: linear-gradient(#ffcc00, #ffeb66);
+}
+
+#alerta .section p,
+#alerta .section li {
+    text-align: justify;
+}
+
+#alerta ul {
+    list-style: square;
+    margin: 0 15px 15px 17px;
+}
+
+
+/* -----END alerta.html----- */
+
+
+/* -----START novousuario.html----- */
+
+#novoUsuario {
+    width: 800px;
+}
+
+#novoUsuario fieldset {
+    border: 1px solid #c5d1d3;
+    border-radius: 5px;
+    padding: 5px;
+    color: #2d4052;
+}
+
+#novoUsuario legend {
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+#novoUsuario ul {
+    margin: 0;
+}
+
+#novoUsuario li {
+    display: inline-block;
+    padding: 5px;
+    width: 30%;
+}
+
+#novoUsuario li input {
+    height: inherit;
+    margin-right: 10px;
+}
+
+#novoUsuario input[type="text"]:first-child {
+    width: 100%;
+}
+
+#novoUsuario input[type="text"]:not(:first-child),
+#novoUsuario input[type="password"] {
+    width: 49%;
+    margin: 15px 0;
+}
+
+#novoUsuario input[type="text"]:not(:first-child) {
+    margin-right: 1.25%;
+}
+
+#novoUsuario .section i:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    top: 27px;
+    color: #2d4052;
+}
+
+#novoUsuario .section i:nth-child(4) {
+    position: absolute;
+    right: 423px;
+    top: 82px;
+    color: #2d4052;
+}
+
+#novoUsuario .section i:nth-child(6) {
+    position: absolute;
+    right: 30px;
+    top: 82px;
+    color: #2d4052;
+}
+
+
+/* -----END novousuario.html----- */
+
+
+/* -----START novoproduto.html----- */
+
+#novoProduto {
+    width: 800px;
+    color: #2d4052;
+}
+
+#novoProduto .section input[type="text"] {
+    width: 100%;
+}
+
+#novoProduto .section input[type="number"] {
+    width: 49%;
+    padding: 0 15px 0 40px;
+}
+
+#novoProduto .section select {
+    width: 49%;
+    padding-left: 35px;
+}
+
+#novoProduto .section select:not(:valid) {
+    color: #a8a8a8;
+}
+
+#novoProduto .section option {
+    color: #000;
+}
+
+#novoProduto .section option:first-child {
+    display: none;
+}
+
+#novoProduto .section input[type="number"]:not(:nth-child(9)):not(:nth-child(13)) {
+    margin-right: 1.25%;
+}
+
+#novoProduto .section input[type="checkbox"] {
+    height: inherit;
+    margin-right: 10px;
+}
+
+#novoProduto .fa:nth-child(2) {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+}
+
+#novoProduto .fa:nth-child(4) {
+    position: absolute;
+    top: 82px;
+    left: 30px;
+}
+
+#novoProduto .fa:nth-child(6) {
+    position: absolute;
+    top: 82px;
+    left: 423px;
+}
+
+#novoProduto .fa:nth-child(8) {
+    position: absolute;
+    top: 137px;
+    left: 30px;
+}
+
+#novoProduto .fa:nth-child(10) {
+    position: absolute;
+    top: 137px;
+    left: 423px;
+}
+
+#novoProduto .fa:nth-child(12) {
+    position: absolute;
+    top: 192px;
+    left: 30px;
+}
+
+#novoProduto .fa:nth-child(14) {
+    position: absolute;
+    top: 192px;
+    left: 423px;
+}
+
+
+/* -----END novoproduto.html----- */
+
+
+/* -----START configempresa.html----- */
+
+#configEmpresa {
+    width: 800px;
+}
+
+#configEmpresa .section input[type="text"] {
+    width: 49%;
+}
+
+#configEmpresa .section input[type="text"]:nth-child(1),
+#configEmpresa .section input[type="text"]:nth-child(3) {
+    width: 100%;
+}
+
+#configEmpresa .section select {
+    width: 49%;
+    padding-left: 35px;
+}
+
+#configEmpresa .section select:not(:valid) {
+    color: #a8a8a8;
+}
+
+#configEmpresa .section option {
+    color: #000;
+}
+
+#configEmpresa .section option:first-child {
+    display: none;
+}
+
+#configEmpresa .section input[name="cidade"],
+#configEmpresa .section input[name="cep"],
+#configEmpresa .section input[name="ie"] {
+    margin-right: 1.25%;
+}
+
+#configEmpresa .fa:nth-child(2) {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+}
+
+#configEmpresa .fa:nth-child(4) {
+    position: absolute;
+    top: 82px;
+    right: 30px;
+}
+
+#configEmpresa .fa:nth-child(6) {
+    position: absolute;
+    top: 137px;
+    left: 365px;
+}
+
+#configEmpresa .fa:nth-child(8) {
+    position: absolute;
+    top: 137px;
+    left: 423px;
+}
+
+#configEmpresa .fa:nth-child(10) {
+    position: absolute;
+    top: 192px;
+    left: 365px;
+}
+
+#configEmpresa .fa:nth-child(12) {
+    position: absolute;
+    top: 192px;
+    right: 30px;
+}
+
+#configEmpresa .fa:nth-child(14) {
+    position: absolute;
+    top: 247px;
+    left: 365px;
+}
+
+#configEmpresa .fa:nth-child(16) {
+    position: absolute;
+    top: 247px;
+    right: 30px;
+}
+
+
+/* -----END configempresa.html----- */
+
+
+/* -----START conficaixa.html----- */
+
+#configCaixa {
+    width: 800px;
+    color: #2d4052;
+}
+
+#configCaixa fieldset {
+    border: 1px solid #c5d1d3;
+    border-radius: 5px;
+    padding: 5px;
+    color: #2d4052;
+}
+
+#configCaixa p{
+    margin-bottom: 15px;
+}
+
+#configCaixa fieldset {
+    margin-bottom: 15px;
+}
+
+#configCaixa legend {
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+}
+
+#configCaixa ul {
+    margin: 0;
+}
+
+#configCaixa li {
+    display: inline-block;
+    padding: 5px;
+    width: 31%;
+    text-align: right;
+    position: relative;
+}
+
+#configCaixa .notas input[type="number"] {
+    width: 49%;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.5) top right;
+    background-blend-mode: color;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#configCaixa .moedas input[type="number"] {
+    width: 49%;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.5) right no-repeat;
+    background-blend-mode: color;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+#configCaixa input[type="checkbox"]{
+    height:inherit;
+}
+
+
+/* -----END configcaixa.html----- */
+
+
+/* -----START principal.html----- */
+
+#principal .mainSection * {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#principal .mainSection {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#principal .bemvindo {
+    color: #fff;
+    text-align: center;
+    font-size:0.8em;
+}
+
+#principal img {
+    max-width: 700px;
+    max-height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#principal .mainSection ul {
+    text-align: center;
+}
+
+#principal .mainSection li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px
+}
+
+#principal .mainSection @-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#principal .mainSection .round {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: -.065em;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+}
+
+#principal .mainSection .round:hover {
+    width: 130%;
+    height: 130%;
+    left: -15%;
+    top: -15%;
+    font-size: 28px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    z-index: 2;
+    border-size: 10px;
+    -webkit-transform: rotate(-360deg);
+}
+
+#principal .mainSection a {
+    background: #ecf0f1;
+    color: rgba(45, 64, 82, .7);
+    border-color: rgba(45, 64, 82, .7);
+}
+
+#principal .mainSection a:hover {
+    background: #3f5a73;
+}
+
+#principal .mainSection .round span.round {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 1px;
+    border: none;
+    padding: 40% 20% 0 20%;
+    color: #ecf0f1;
+}
+
+#principal .mainSection .round span:hover {
+    opacity: .85;
+    font-size: 16px;
+}
+
+#principal .mainSection span {
+    background: rgba(45, 64, 82, .5);
+}
+
+#principal .footer {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #FFF;
+}
+
+#principal .footer p {
+    font-size: 11px;
+    text-shadow: 1px 1px #000;
+}
+
+#principal .footer .fa {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#principal .footer .sair {
+    margin-bottom: 15px;
+}
+
+#principal .footer .sair a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#principal .footer .sair a:hover {
+    cursor: pointer;
+    color: #eb6e60;
+}
+
+#principal .footer .fa:nth-child(5):hover {
+    color: #4867AA;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+}
+
+#principal .footer .fa:nth-child(6):hover {
+    color: #2AA9E0;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+}
+
+#principal .footer .fa:nth-child(7):hover {
+    color: #E12B28;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+}
+
+
+/* -----END principal.html----- */
+
+
+/* -----START relatorios.html----- */
+
+#relatorios {
+    width: 800px;
+}
+
+#relatorios fieldset {
+    border: 1px solid #c5d1d3;
+    border-radius: 5px;
+    padding: 5px;
+    color: #2d4052;
+    margin-bottom: 15px;
+}
+
+#relatorios legend {
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0 5px;
+    
+}
+
+#relatorios ul {
+    margin: 0;
+    display: inline-block;
+}
+
+#relatorios li {
+    padding: 5px;
+}
+
+#relatorios li input {
+    height: inherit;
+    margin-right: 10px;
+}
+
+#relatorios .vendaPeriodo input {
+    height: 40px;
+    margin: 0 15px;
+    padding: 0 15px;
+    width: 142px;
+}
+
+#relatorios .vendaPeriodo input[type="checkbox"]{
+    height: auto;
+    width: auto;
+    margin-right:5px;
+    margin-left: 0;
+}
+
+
+#relatorios .section i {
+    margin-right: 5px;
+}
+
+#relatorios .itensFaltantes button {
+    position: absolute;
+    top: 39px;
+    left: 667px;
+}
+
+#relatorios .vendaPeriodo button {
+    position: absolute;
+    top: 132px;
+    left: 667px;
+}
+
+#relatorios .cadastros button {
+    position: absolute;
+    top: 226px;
+    left: 667px;
+}
+
+
+/* -----END relatorios.html----- */
+
+
+/* -----START relatoriogerado.html----- */
+
+#relatoriogerado {
+	width: 800px;
+	color: #2d4052;
+}
+
+#relatoriogerado .section p {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#relatoriogerado .section .relatorio {
+	width: 100%;
+	height: 300px;
+	border: 1px solid #c5d1d3;
+        border-radius: 5px;
+	background-color: #a8a8a8;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+
+#relatoriogerado .section .relatorio div {
+	min-width: 100%;
+	min-height: 400%;
+	background-color: #fff;
+        box-sizing: border-box;
+        padding: 1cm;
+        box-shadow: 5px 5px 15px #555;
+        white-space: pre;
+        font-family: Consolas, monospace;
+        font-size: 13px;
+}
+
+.relatorio::-webkit-scrollbar-thumb {
+    background: rgba(45, 64, 82, 1);
+}
+
+@media print {
+    body * {
+        display: none;
+    }
+    
+    body,
+    #relatoriogerado,
+    #relatoriogerado .section,
+    #relatoriogerado .section .relatorio {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        box-shadow: none;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    #relatoriogerado .section .relatorio * {
+        display: block;
+        box-shadow: none;
+        font-size: 14.3px !important;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+}
+/* -----END relatoriogerado.html----- */
