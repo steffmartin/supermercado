@@ -1,5 +1,7 @@
 # Sistema de Supermercado
 
+![](demo/demo_6.png)
+
 Sistema experimental para caixas de supermercado, desenvolvido para prática de aplicação de Design Patterns.
 
 Neste arquivo você encontrará instruções para instalação, imagens demonstrativas e também tecnologias utilizadas nesta aplicação.
@@ -57,7 +59,7 @@ O sistema pode ser acessado pela URL `http://localhost:8084/SiMarket`
 
 ## Demonstração
 
-Em breve detalhes.
+> Em breve detalhes.
 
 #### Capturas de tela
 
