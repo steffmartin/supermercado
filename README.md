@@ -125,4 +125,4 @@ No Netbeans, com o botão direito sobre o projeto, vá em Clean and Build
 
 ## Licença
 
-Este projeto está licenciado sob a GNU Affero General Public License v3.0 - leia [LICENSE.md](LICENSE.md) para mais detalhes.
+Este projeto está licenciado sob a MIT License - leia [LICENSE.md](LICENSE.md) para mais detalhes.
