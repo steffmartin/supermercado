@@ -120,8 +120,8 @@ No Netbeans, com o botão direito sobre o projeto, vá em Clean and Build
 
 ## Autores
 
-Steffan Martins Alves - [LinkedIn](https://www.linkedin.com/in/steffanmartins/)
-Heitor Henrique Nunes - [LinkedIn](https://www.linkedin.com/in/heitor-nunes-7b1322176/)
+* Steffan Martins Alves - [LinkedIn](https://www.linkedin.com/in/steffanmartins/)
+* Heitor Henrique Nunes - [LinkedIn](https://www.linkedin.com/in/heitor-nunes-7b1322176/)
 
 ## Licença
 
